@@ -1,0 +1,15 @@
+.navbar {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+    
+  &-link {
+    font-size: 30px;
+    color: $black;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+  }
+}

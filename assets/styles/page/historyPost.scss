@@ -1,0 +1,43 @@
+.history {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+
+    &-heading {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-bottom: 40px;
+
+        &__post {
+            font-size: 32px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+    }
+}
+
+button{
+    width:100px;
+    height:40px;
+    background-color: $orange;
+    border-radius: 5px;
+}
+
+button:hover{
+  cursor:pointer;
+}
+button:hover:disabled{
+  cursor:not-allowed;
+}

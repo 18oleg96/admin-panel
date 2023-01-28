@@ -1,0 +1,17 @@
+.button {
+    cursor: pointer;
+    padding: 30px 47px;
+    width: 350px;
+    color: $black-100;
+    border: 1px $black-100;
+    border: none;
+    border-radius: 12px;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 21px;
+}

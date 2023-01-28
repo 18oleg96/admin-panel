@@ -1,0 +1,113 @@
+.usersList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 20px;
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+
+        &__user {
+            font-size: 24px;
+
+            &:first-child {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-block {
+        display: flex;
+
+        &__button {
+            width: 300px;
+            padding: 25px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+    color: $white;
+    opacity: 0;
+
+    &.opened {
+        visibility: visible;
+
+        transition: opacity 0.3s ease;
+
+        opacity: 1;
+    }
+
+    .modal-background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #12161FB2;
+        backdrop-filter: blur(10px);
+
+        .modal-info {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 100%;
+            max-width: 1000px;
+            min-height: 800px;
+            margin: 0 12px;
+            padding: 80px 100px ;
+
+            border: 1px solid rgba(228, 255, 229, 40%);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 79.5%);
+            font-size: 24px;
+
+            &__image {
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+
+            &__name {
+                display: flex;
+                margin-bottom: 20px;
+
+                &-text {
+                    &:first-child {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            &__text {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.disableScroll {
+    overflow: hidden;
+}

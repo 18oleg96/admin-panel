@@ -1,0 +1,44 @@
+.users {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    &-heading {
+        font-size: 50px;
+        margin: 0 auto 80px;
+    }
+
+    &-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 600px;
+        margin-bottom: 40px;
+
+        &__info {
+            font-size: 32px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+button{
+    width:100px;
+    height:40px;
+    background-color: $orange;
+    border-radius: 5px;
+}
+
+button:hover{
+  cursor:pointer;
+}
+button:hover:disabled{
+  cursor:not-allowed;
+}

@@ -1,0 +1,30 @@
+//Vars
+@import '@/assets/styles/vars';
+
+//Fonts
+
+//Breakpoints
+@import '@/assets/styles/breakpoints';
+
+//Global
+@import '@/assets/styles/global';
+
+//UIkit
+@import '@/assets/styles/ui-elements/navbar';
+@import '@/assets/styles/ui-elements/uiInput';
+@import '@/assets/styles/ui-elements/buttonBasic';
+
+//Components
+@import '@/assets/styles/components/postItem';
+@import '@/assets/styles/components/usersList';
+
+//Page 
+@import '@/assets/styles/page/indexPage';
+@import '@/assets/styles/page/historyPost';
+@import '@/assets/styles/page/users';
+
+//Helpers
+@import '@/assets/styles/helpers';
+
+//Typography
+
